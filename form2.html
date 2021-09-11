@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cws3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        html,
+        body {
+            min-height: 100%;
+        }
+
+        body,
+        div,
+        form,
+        input,
+        select,
+        p {
+            padding: 0;
+            margin: 0;
+            outline: none;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 14px;
+            color: #FFB1E9;
+        }
+
+        h1 {
+            margin: 0;
+            font-weight: 400;
+        }
+
+        h3 {
+            margin: 12px 0;
+            color: blanchedalmond;
+        }
+
+        .main-block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        form {
+            width: 100%;
+            padding: 20px;
+        }
+
+        fieldset {
+            border: none;
+            border-top: 1px solid blanchedalmond;
+        }
+
+        .account-details,
+        .personal-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .account-details>div,
+        .personal-details>div>div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .account-details>div,
+        .personal-details>div,
+        input,
+        label {
+            width: 100%;
+
+        }
+
+        label {
+            padding: 0 5px;
+            text-align: right;
+            vertical-align: middle;
+        }
+
+        input {
+            padding: 5px;
+            vertical-align: middle;
+        }
+
+        .checkbox {
+            margin-bottom: 10px;
+        }
+
+        select,
+        .children,
+        .gender,
+        .bdate-block {
+            width: calc(100% + 26px);
+            padding: 5px 0;
+        }
+
+        select {
+            background: transparent;
+        }
+
+        .gender input {
+            width: auto;
+        }
+
+        .gender label {
+            padding: 0 5px 0 0;
+        }
+
+        .bdate-block {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .birthdate select.day {
+            width: 35px;
+        }
+
+        .birthdate select.mounth {
+            width: calc(100% - 94px);
+        }
+
+        .birthdate input {
+            width: 38px;
+            vertical-align: unset;
+        }
+
+        .checkbox input,
+        .children input {
+            width: auto;
+            margin: -2px 10px 0 0;
+        }
+
+        .checkbox a {
+            color: blanchedalmond;
+        }
+
+        .checkbox a:hover {
+            color: blanchedalmond;
+        }
+
+        button {
+            width: 50%;
+            float: center;
+            padding: 10px 0;
+            margin: 10px auto;
+            border-radius: 5px;
+            border: none;
+            background: blanchedalmond;
+            font-size: 14px;
+            font-weight: 600;
+            color: rgb(60, 75, 126);
+        }
+
+        button:hover {
+            background: blanchedalmond;
+            opacity: 50%;
+
+        }
+
+        @media (min-width: 568px) {
+
+            .account-details>div,
+            .personal-details>div {
+                width: 50%;
+            }
+
+            label {
+                width: 40%;
+            }
+
+            input {
+                width: 60%;
+            }
+
+            select,
+            .children,
+            .gender,
+            .bdate-block {
+                width: calc(60% + 16px);
+            }
+
+            input.class {
+                opacity: 50%;
+            }
+            input{
+                background-color: rgba(0, 0, 0, 0.459);
+                text-decoration-color: black;
+            }
+    </style>
+</head>
+
+<body background="https://i.pinimg.com/originals/36/f0/94/36f0949c623b61a235fd6645fa507236.jpg">
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="2436636.svg"
+                    style="height: 40px; width: 40px;" alt="">
+            </div>
+            <ol>
+                <li>We Love Books</li>
+            </ol>
+            <ul>
+                <li><a href="https://www.amazon.in/gp/browse.html?node=1634753031&ref_=nav_em_sbc_kdl_ebkall_0_2_4_10">Contact
+                        Us</a></li>
+                <li><a
+                        href="https://www.amazon.in/gp/browse.html?node=17941593031&ref_=nav_em_adbl_nav_sl_link2_0_2_5_3">Litsen
+                        to Audiobooks</a>
+                </li>
+            </ul>
+            </nav>
+    </header>
+
+    <div class="main-block">
+        <form action="/" onsubmit="return val()" action="nilanshuhedaoo@gmail.com?subject=Userdata" method="POST" enctype="text/plain">
+            <h1>Create a free account</h1>
+
+            <fieldset>
+                <legend>
+                    <h3>Personal Info</h3>
+                </legend>
+                <div class="personal-details">
+                    <div>
+                        <div><label>Name*</label><input style="border-radius: 10px;" type="text" name="name" required
+                                id="class"></div>
+                        <div><label>Phone*</label><input style="border-radius: 10px;" type="number" name="name"
+                                required></div>
+                        <div><label>House/Flat No.</label><input style="border-radius: 10px;" type="text" name="name">
+                        </div>
+                        <div><label>Area/Locality</label><input style="border-radius: 10px;" type="text" name="name">
+                        </div>
+                        <div><label>Landmark</label><input style="border-radius: 10px;" type="text" name="name"></div>
+                        <div><label>City*</label><input style="border-radius: 10px;" type="text" name="name" required>
+                        </div>
+                        <div><label>Pincode*</label><input style="border-radius: 10px;" type="number" name="name"
+                                required></div>
+
+                    </div>
+                    <div>
+                        <div>
+                            <label>Gender* </label>
+                            <div class="gender">
+                                <input style="border-radius: 10px;" type="radio" value="none" id="male" name="gender"
+                                    required />
+                                <label for="male" class="radio">Male</label>
+                                <input style="border-radius: 10px;" type="radio" value="none" id="female" name="gender"
+                                    required />
+                                <label for="female" class="radio">Female</label>
+                            </div>
+                        </div>
+                        <div class="birthdate">
+                            <label for="dob">Date of birth</label>
+                            <input style="width: 27%; border-radius: 10px;" type="date" name="mydob" id="dob">
+                        </div>
+                        <div>
+                        <label>Country*</label>
+                        <div><input style="border-radius: 10px; border-color: black; width: 100%;  margin-right: 10px; align-items: left;" type="text" name="name" required id="class"></div>
+                    </div>
+                    </div>
+                   
+
+
+                </div>
+    </div>
+    </fieldset>
+    <fieldset>
+        <legend>
+            <h3>Register Your Email</h3>
+        </legend>
+        <div class="account-details">
+            <div><label>Email*</label><input style="border-radius: 10px;" type="text" name="name" required></div>
+            <div><label>Password*</label><input style="border-radius: 10px;" type="password" name="name" required></div>
+            <div><label>Repeat email*</label><input style="border-radius: 10px;" type="text" name="name" required></div>
+            <div><label>Repeat password*</label><input style="border-radius: 10px;" type="password" name="name"
+                    required></div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>
+            <h3>Terms and Mailing</h3>
+        </legend>
+        <div class="terms-mailing">
+            <div class="checkbox">
+                <input style="border-radius: 10px;" type="checkbox" name="checkbox"><span>I accept the <a href="">Terms
+                        and Conditions.</a></span>
+            </div>
+            <div class="checkbox">
+                <input style="border-radius: 10px;" type="checkbox" name="checkbox"><span>I am not a robot.</span>
+            </div>
+    </fieldset>
+    <center><button type="submit" href="/">Submit</button></center>
+    </form>
+    </div>
+</body>
+
+</html>

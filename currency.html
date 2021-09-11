@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="cws3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        input[type="button"] {
+            border-radius: 10px;
+
+            background-color: #4e5affa6;
+            color: black;
+            width: 95px;
+            height: 49px;
+            padding-left: 22px;
+            font-size: x-large;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        input[type="button"]:hover {
+            background-color: #4e5aff52;
+        }
+
+        input[type="text"] {
+            margin-bottom: 10px;
+            border-radius: 5px;
+            width: 400px;
+            height: 43px;
+            background-color: rgba(255, 255, 255, 0.671);
+            font-size: xx-large;
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            ;
+        }
+    </style>
+    <script>
+        function clr() {
+            document.getElementById("box").value = "";
+        }
+
+
+
+
+        function calculate(val) {
+            var x = document.getElementById("rbox").value;
+            if (val == 1) {
+                document.getElementById("dbox").value = x * 0.01350;
+            }
+            else if (val == 2) {
+                document.getElementById("pbox").value = x * 0.00977;
+            }
+            else if (val == 3) {
+                document.getElementById("sbox").value = x * 0.0111;
+            }
+            else {
+                document.getElementById("xbox").value = x * 0.01659;
+            }
+
+            // var y = document.getElementById("dbox").value;
+            // if (val == 0) {
+            //     document.getElementById("rbox").value = x * 74.10;
+            // }
+            // else if (val == 2) {
+            //     document.getElementById("pbox").value = x * 0.72;
+            // }
+            // else if (val == 3) {
+            //     document.getElementById("sbox").value = x * 0.83;
+            // }
+            // else {
+            //     document.getElementById("xbox").value = x * 1.23;
+            // }
+
+            // var z = document.getElementById("pbox").value;
+            // if (val == 0) {
+            //     document.getElementById("rbox").value = x * 102.37;
+            // }
+            // else if (val == 1) {
+            //     document.getElementById("dbox").value = x * 1.38;
+            // }
+            // else if (val == 3) {
+            //     document.getElementById("sbox").value = x * 1.15;
+            // }
+            // else {
+            //     document.getElementById("xbox").value = x * 1.70;
+            // }
+
+            // var a = document.getElementById("sbox").value;
+            // if (val == 0) {
+            //     document.getElementById("rbox").value = x * 89.06;
+            // }
+            // else if (val == 1) {
+            //     document.getElementById("dbox").value = x * 1.2;
+            // }
+            // else if (val == 2) {
+            //     document.getElementById("pbox").value = x * 0.87;
+            // }
+            // else {
+            //     document.getElementById("xbox").value = x * 1.48;
+            // }
+
+            // var b = document.getElementById("xbox").value;
+            // if (val == 0) {
+            //     document.getElementById("rbox").value = x * 60.28;
+            // }
+            // else if (val == 1) {
+            //     document.getElementById("dbox").value = x * 0.81;
+            // }
+            // else if (val == 2) {
+            //     document.getElementById("pbox").value = x * 0.59;
+            // }
+            // else {
+            //     document.getElementById("sbox").value = x * 0.68;
+            // }
+        }
+    </script>
+
+</head>
+
+<body>
+    <center>
+        <font size="+2" face=>
+            <h2
+                style="margin-bottom:0px; margin-top: 100px; margin-bottom: 10px; color: blanchedalmond; font-family: 'Poppins', sans-serif;">
+                CURRENCY CONVERTER</h2>
+            <hr align="center" width="50%" style="border-radius: 8px;" size="3px"><br>
+        </font>
+        <table style="height: 100%; width: 50;">
+            <tr>
+                <td colspan="3"><input type="text" id="rbox" placeholder="&#8377" /></td>
+                <td><input type="button" value="INR" onclick="clr(0)" style="padding-left:20px;padding-right:20px" />
+                </td>
+
+            </tr>
+
+            <tr>
+                <td colspan="3"><input type="text" id="dbox" placeholder="&#36" /></td>
+                <td><input type="button" value="USD" onclick="calculate('1')"
+                        style="padding-left:20px;padding-right:20px" /></td>
+
+            </tr>
+
+            <tr>
+                <td colspan="3"><input type="text" id="pbox" placeholder="&#163" /></td>
+                <td><input type="button" value="GBP" onclick="calculate('2')"
+                        style="padding-left:20px;padding-right:20px" /></td>
+
+            </tr>
+            <tr>
+                <td colspan="3"><input type="text" id="sbox" placeholder="&#8364" /></td>
+                <td><input type="button" value="EUR" onclick="calculate('3')"
+                        style="padding-left:20px;padding-right:20px" /></td>
+
+            </tr>
+            <tr>
+                <td colspan="3"><input type="text" id="xbox" placeholder="&#36" /></td>
+                <td><input type="button" value="CAD" onclick="calculate('4')"
+                        style="padding-left:20px;padding-right:20px" /></td>
+
+            </tr>
+
+        </table>
+    </center>
+
+
+</body>
+
+</html>
